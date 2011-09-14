@@ -19,9 +19,11 @@ Installing
 
 Installing vim-latex with Janus is easy. Just add the following line
 to your local rake definitions in _~/.janus.rake_:
+
     vim_plugin_task "vim-latex", "git://github.com/micheljansen/vim-latex.git"
 
 Then, from inside the Janus installation in  _~/.vim/_ run:
+
     rake vim-latex
 
 to install vim-latex.
@@ -42,9 +44,9 @@ Using
 -----
 
 Just open any .tex file and then in normal mode hit:
-  * **\ll** to complile
-  * **\lv** to view
-  * **\ls** to jump to the current cursor position using synctex
+* **\ll** to complile
+* **\lv** to view
+* **\ls** to jump to the current cursor position using synctex
 
 
 Depending on your configuration, the vim latex suite might require
