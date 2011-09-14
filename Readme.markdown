@@ -26,9 +26,26 @@ Then, from inside the Janus installation in  _~/.vim/_ run:
 
 to install vim-latex.
 
+Optionally, add these lines to your _~/.vimrc.local_:
+    set grepprg=grep\ -nH\ $*
+    
+    " OPTIONAL: This enables automatic indentation as you type.
+    filetype indent on
+    
+    " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+    " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+    " The following changes the default filetype back to 'tex':
+    let g:tex_flavor='latex'
+
 
 Using
 -----
+
+Just open any .tex file and then in normal mode hit:
+  * **\ll** to complile
+  * **\lv** to view
+  * **\ls** to jump to the current cursor position using synctex
+
 
 Depending on your configuration, the vim latex suite might require
 some additional fiddling in order to work.
