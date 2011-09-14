@@ -44,9 +44,10 @@ Using
 -----
 
 Just open any .tex file and then in normal mode hit:
-* **\ll** to complile
-* **\lv** to view
-* **\ls** to jump to the current cursor position using synctex
+
+*    **\ll** to complile
+*    **\lv** to view
+*    **\ls** to jump to the current cursor position using synctex
 
 
 Depending on your configuration, the vim latex suite might require
